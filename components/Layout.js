@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../styles/layout.module.css';
 import Nav from './Nav';
+import Header from './Header';
 
 export default function Layout({ children }) {
   return (
@@ -8,6 +9,7 @@ export default function Layout({ children }) {
       <Nav />
       <div className={styles.container}>
         <main className={styles.main}>
+          <Header />
           {children}
         </main>
       </div>
